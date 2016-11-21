@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/*
+ * APFS atomic swap operation
+ */
+
 int main(int argc, char **argv) {
   int err;
 

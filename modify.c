@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/*
+ * Modify the first 26 bytes of a file
+ */
+
 int main(int argc, char **argv) {
   FILE *f;
   size_t w;

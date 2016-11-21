@@ -13,5 +13,6 @@ modify: modify.c
 clean:
 	rm -f clone
 	rm -f swap
+	rm -f modify
 
-.PHONY: clean
+.PHONY: clean all

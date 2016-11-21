@@ -1,6 +1,10 @@
 #include <copyfile.h>
 #include <stdio.h>
 
+/*
+ * Copy, but use COW on APFS
+ */
+
 int main(int argc, char **argv) {
   int err;
 
