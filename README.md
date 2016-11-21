@@ -7,6 +7,8 @@
   + `swap` atomically swaps two files
     * `clone` and `swap` won't work on non-APFS Volumes
 - (Needs macOS >=10.12)
+- `alias apfs="diskutil apfs -IHaveBeenWarnedThatAPFSIsPreReleaseAndThatIMayLoseData"`
+  is convenient to have
 
 # APFS Stuff
 
