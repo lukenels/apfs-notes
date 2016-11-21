@@ -1,3 +1,13 @@
+# APFS Notes
+
+- Some notes and sample programs I wrote when playing around with APFS
+- `make` wil build three programs, `modify`, `clone`, and `swap`
+  + `modify` changes the first 26 bytes of a file
+  + `clone` uses the new COW copy API
+  + `swap` atomically swaps two files
+    * `clone` and `swap` won't work on non-APFS Volumes
+- (Needs macOS >=10.12)
+
 # APFS Stuff
 
 ## APFS Container
