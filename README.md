@@ -80,3 +80,12 @@
     * Doesn't work yet as far as I can tell
   + Per volume, per file, encryption
 
+# Other Resources
+
+- [Apple Documentation](https://developer.apple.com/library/prerelease/content/documentation/FileManagement/Conceptual/APFS_Guide/Introduction/Introduction.html)
+- [WWDC Presentation](http://devstreaming.apple.com/videos/wwdc/2016/701q0pnn0ietcautcrv/701/701_introducing_apple_file_system.pdf)
+- [APFS on Wikipedia](https://en.wikipedia.org/wiki/Apple_File_System)
+- `man diskutil`
+- `man hdiutil`
+- `man copyfile`
+- `man renamex_ap`
