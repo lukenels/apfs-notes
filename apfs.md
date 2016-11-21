@@ -1,6 +1,6 @@
 # APFS Stuff
 
-1. APFS Container
+## APFS Container
 
 - Imports APFS Physical stores
 - Exports APFS Volumes
@@ -8,18 +8,18 @@
   + Called the container reference disk
 - (Only supports 1:1 mapping between physical stores and volumes for now)
 
-2. Managing disks
+## Managing disks
 
 - `diskutil apfs -IHaveBeenWarnedThatAPFSIsPreReleaseAndThatIMayLoseData`
 - Aliased by `apfs` on my laptop
 
-3. Create container
+## Create container
 
 - `apfs createContainer diskXsY`
 - `apfs list` shows global APFS state
 - One container, one physical store
 
-4. Create Volume
+## Create Volume
 
 - `apfs addVolume diskXsY APFS MyVolume`
   + Space-sharing by default
@@ -30,7 +30,7 @@
   + Can't grow beyond original size
   + Guaranteed to have as much space as originally allocated
 
-5. Play around with features
+## Play around with features
 
 - `dd if=/dev/random of=bigfile bs=1m count=512`
 - `clone bigfile bigfile.2`
@@ -47,7 +47,7 @@
   + `swap bigfile bigfile.tmp.2`
   + Claimed to be atomic by Apple
 
-6. Implementation
+## Implementation
 
 - Copy-on-write
   + Clone operation creates file with references to old blocks
@@ -57,7 +57,7 @@
     * Modifying hard-linked file changes original
     * Modifying COWed file creates copy, original stays same
 
-7. Other things
+## Other things
 
 - Snapshotting and Revisioning?
   + Doesn't seem to be available yet
